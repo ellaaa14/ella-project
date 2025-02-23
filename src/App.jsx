@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
-import Hero from './components/Hero'; 
+import Hero from './assets/components/Hero'; 
+import AboutMe from './assets/components/AboutMe';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Hero />
-    </div>
+    <Routes>
+      <Route path="/" element={<Hero />} />
+      <Route path="/about" element={<AboutMe />} />
+    </Routes>
   );
 }
 
