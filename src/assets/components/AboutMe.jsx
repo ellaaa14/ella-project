@@ -1,19 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import Navbar from './Navbar';
 import aboutmeimage from '../pic/Ella.jpg';
 
 const AboutMe = () => {
   return (
     <section className="about-me">
-      <nav className="navbar">
-        <div className="nav-brand">Ella Mae Sarausos</div>
-        <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>  {/* Link to Hero */}
-          <li><Link to="/about">About</Link></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <Navbar />
       <div className="container">
         <div className="aboutmeimage">
           <img src={aboutmeimage} alt="Ella Mae Sarausos" />
