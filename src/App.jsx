@@ -6,6 +6,7 @@ import Blog from './assets/components/Blog';
 import Experience from './assets/components/Experience';
 import Projects from './assets/components/Projects';
 import Contact from './assets/components/Contact';
+import Certificate from './assets/components/Certificate';
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/blog" element={<Blog />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/certificate" element={<Certificate />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
